@@ -3,7 +3,7 @@
 > 「经纬上的好好住」的主工作流，负责汇总三大维度的居住环境分析。
 > 本目录的截图存档自 2026-09-15 发布版。
 
-![main_flow 画布全景](workflows/main-flow-canvas.png)
+![main_flow 画布全景](./main-flow-canvas.png)
 
 ## 流程结构
 
@@ -30,7 +30,7 @@
 | building_gap | Integer | 楼间距（米） |
 | south_build_height | Integer | 南侧楼高（米） |
 
-![开始节点参数](workflows/main-flow-start-node.png)
+![开始节点参数](./main-flow-start-node.png)
 
 ## 三个子工作流
 
@@ -60,7 +60,7 @@
 
 - 亮点：大模型节点同时接收 `map_image_url` 的视觉理解输入，可将通勤地图一并纳入最终报告。
 
-![大模型节点配置](workflows/main-flow-llm-node.png)
+![大模型节点配置](./main-flow-llm-node.png)
 
 ## 结束节点
 

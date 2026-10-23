@@ -2,7 +2,7 @@
 
 > 「经纬上的好好住」三大维度之二：城市气候 + 地形风环境双路分析，评估通风防潮风险。
 
-![workflow_wind 画布全景](workflows/wind-canvas.png)
+![workflow_wind 画布全景](./wind-canvas.png)
 
 ## 流程结构
 
@@ -25,7 +25,7 @@
 | floor | Integer | ✅ | 楼层 |
 | orientation | String | ✅ | 朝向 |
 
-![开始节点](workflows/wind-start-node.png)
+![开始节点](./wind-start-node.png)
 
 ## 节点详解
 
@@ -33,7 +33,7 @@
 
 与日照工作流共用同一插件：`address ← house_addr`、`city`，输出经纬度坐标。
 
-![地理编码节点](workflows/wind-geocode-node.png)
+![地理编码节点](./wind-geocode-node.png)
 
 ### ② 城市气候（LLM 节点 · 宏观气候）
 
@@ -61,7 +61,7 @@
 
 输出 `climate_json`：城市级气候画像（主导风向、湿度、雨季、台风/回南天等特殊现象）。
 
-![城市气候节点](workflows/wind-climate-node.png)
+![城市气候节点](./wind-climate-node.png)
 
 ### ③ 地形风环境分析（LLM 节点 · 微观局地风）
 
@@ -72,14 +72,14 @@
 
 📄 完整提示词：[`prompts/wind-terrain-prompt.md`](prompts/wind-terrain-prompt.md)
 
-![地形风环境分析节点](workflows/wind-terrain-node.png)
+![地形风环境分析节点](./wind-terrain-node.png)
 
 ### ④ 大模型_2（汇总节点）
 
 - 输入：`climate_json`（城市气候）、`terrain_json`（地形风）、`city`、`floor`、`orientation`
 - 把宏观气候 + 微观地形风融合，结合楼层与朝向，生成最终的通风防潮分析报告 `wind_report`
 
-![汇总节点](workflows/wind-summary-node.png)
+![汇总节点](./wind-summary-node.png)
 
 ## 设计亮点
 

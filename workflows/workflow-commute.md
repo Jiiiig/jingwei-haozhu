@@ -2,7 +2,7 @@
 
 > 「经纬上的好好住」三大维度之三：高德多模式路线规划 + 静态路线图生成，评估通勤效率。
 
-![workflow_commute 画布全景](workflows/commute-canvas.png)
+![workflow_commute 画布全景](./commute-canvas.png)
 
 ## 流程结构
 
@@ -23,7 +23,7 @@
 | commute_dest | String | ✅ | 通勤目的地 |
 | city | String | ✅ | 城市名 |
 
-![开始节点](workflows/commute-start-node.png)
+![开始节点](./commute-start-node.png)
 
 ## 节点详解
 
@@ -58,8 +58,8 @@
 
 输出 `report`：多模式通勤对比评估报告。
 
-![大模型节点插件配置](workflows/commute-llm-plugins.png)
-![大模型节点提示词](workflows/commute-llm-prompt.png)
+![大模型节点插件配置](./commute-llm-plugins.png)
+![大模型节点提示词](./commute-llm-prompt.png)
 
 ### ③ 代码节点 — 通勤路线静态地图
 
@@ -76,7 +76,7 @@
 - `map_image_url` — 静态地图链接（供结束节点返回）
 - `map_markdown` — Markdown 图片语法（供主流程大模型节点嵌入报告）
 
-![代码节点](workflows/commute-code-node.png)
+![代码节点](./commute-code-node.png)
 
 ## 设计亮点
 

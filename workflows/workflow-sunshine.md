@@ -2,7 +2,7 @@
 
 > 「经纬上的好好住」三大维度之一：用真实地理坐标 + 太阳高度角公式计算日照采光评级。
 
-![workflow_sunshine 画布全景](workflows/sunshine-canvas.png)
+![workflow_sunshine 画布全景](./sunshine-canvas.png)
 
 ## 流程结构
 
@@ -23,7 +23,7 @@
 | orientation | String | ✅ | 朝向 |
 | house_addr | String | ✅ | 房源地址 |
 
-![开始节点](workflows/sunshine-start-node.png)
+![开始节点](./sunshine-start-node.png)
 
 ## 节点详解
 
@@ -31,7 +31,7 @@
 
 把结构化地址转换为高德经纬度坐标，输入 `address ← house_addr`、`city`，输出区县级地理信息与坐标（`data` 数组：city / district / street / township / formatted_address 等）。
 
-![地理编码节点](workflows/sunshine-geocode-node.png)
+![地理编码节点](./sunshine-geocode-node.png)
 
 ### ② 代码节点 — 太阳高度角计算（核心算法）
 
@@ -74,8 +74,8 @@ const hSummer = 90 - Math.abs(phi - deltaSummer);  // 夏至正午太阳高度�
 | `west_score` | 西晒评分 |
 | `orientation` / `floor` | 透传参数（供报告引用） |
 
-![代码节点输入](workflows/sunshine-code-node.png)
-![代码节点输出](workflows/sunshine-code-output.png)
+![代码节点输入](./sunshine-code-node.png)
+![代码节点输出](./sunshine-code-output.png)
 
 ### ③ 大模型节点
 
