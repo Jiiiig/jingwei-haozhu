@@ -1,0 +1,7 @@
+# 忽略不需要上传的文件
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/
+node_modules/
