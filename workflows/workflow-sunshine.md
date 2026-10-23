@@ -79,6 +79,8 @@ const hSummer = 90 - Math.abs(phi - deltaSummer);  // 夏至正午太阳高度�
 
 ### ③ 大模型节点
 
+完整提示词见 [`workflows/prompts/sunshine-report-prompt.md`](prompts/sunshine-report-prompt.md)；节点输入为代码节点的 12 个变量（截图：[sunshine-llm-node.png](../workflows/sunshine-llm-node.png)）。
+
 输入 `winter_altitude`、`summer_altitude`、`sunshine_report` 等，模型 豆包 2.0 pro，把计算结果翻译成人人能懂的日照采光分析报告。
 
 ## 设计亮点
