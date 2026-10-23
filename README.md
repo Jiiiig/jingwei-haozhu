@@ -35,7 +35,7 @@
 ```
 .
 ├── README.md            # 本说明文件
-├── agent.json           # 智能体编排导出文件（从 Coze 导出后放入）
+├── agent-config.md      # 模型与运行参数配置档案
 ├── prompts/             # 提示词文本（便于阅读与迭代）
 └── workflows/           # 工作流导出文件（如有）
 ```
