@@ -44,25 +44,11 @@
 
 ## 🖼️ 效果演示
 
-以广州一处房源（大学城 → 琶洲通勤）为例的真实测评输出：
+以广州一处房源（大学城 → 琶洲通勤）为例的真实测评输出——从日照采光、通风防潮到通勤路线图与综合小结，完整连续呈现：
 
-**1. 日照采光分析** — 冬至日照 1.5h、遮挡比 1.4 判定冬季遮挡，并附可交互的 3D 日照模拟器
+![完整测评报告演示](docs/demo-long.jpg)
 
-![日照采光分析](docs/example-1-sunshine.jpg)
-
-**2. 通风防潮评估** — 识别出「江风 + 湖陆风 + 绿地风」三重地形风叠加，通风 4 星、防潮需注意
-
-![通风防潮评估](docs/example-2-wind.jpg)
-
-**3. 通勤便利性** — 五模式对比（公交 1h53m / 自驾 22m / 电动车 1h5m），路线图 + 星级 + 短板说明
-
-![通勤路线图](docs/example-3-commute-map.jpg)
-
-![通勤详情](docs/example-4-commute-detail.jpg)
-
-**综合小结** — 三大维度融合成最终居住建议 + 免责提示
-
-![综合小结](docs/example-5-summary.jpg)
+> 单屏截图：[日照分析](docs/example-1-sunshine.jpg) · [通风评估](docs/example-2-wind.jpg) · [通勤路线图](docs/example-3-commute-map.jpg) · [通勤详情](docs/example-4-commute-detail.jpg) · [综合小结](docs/example-5-summary.jpg)
 
 ## 📁 目录结构
 
